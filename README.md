@@ -9,4 +9,8 @@ Follow the steps below to set up and run the project:
 
 2. Open three terminals.
 
-3. In the first terminal, run the following command:
+3. In the first terminal, run the following command: sudo docker-compose up -d
+
+4. In the second terminal, run the following command: python3 app.py
+
+5. In the third terminal, run the following command: python3 obu_simulation.py
