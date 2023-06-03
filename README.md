@@ -18,6 +18,7 @@ Follow the steps below to set up and run the project:
 
 5. In the third terminal, run the following command: python3 obu_simulation.py
 
-6. Access the project website to view the results.
+## Project Map Example when run the project
 
-![Web App, Map example](screenshots/Map_example.png)
+
+![Web App, Map example](Screenshots/Map_example.png)
