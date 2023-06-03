@@ -45,30 +45,6 @@ def sendDENM(obu, need_water, random_zone):
     f.close()
     #time.sleep(1)
     
-# N é usada     
-def find_closest_zone_no_Rep(analyze_zones, obu_lat, obu_lon, id, lock):
-    #Returns none if there are no zones to analyze, which means that all zones are being analyzed by OBUs
-    #Returns the closest zone to the given coordinates of the OBU, it return always different zones for each OBUs
-    closest_zone = None
-    closest_zone_distance = float('inf')
-    #print("OBU with ID ({}) is OBU_ZONES!!!!!!!!!!!!!!!!!!!!!: {}".format(id, OBU_ZONES))
-    with lock:
-        for zone in analyze_zones:
-            #with lock:
-            if zone in OBU_ZONES:
-                continue
-            #print("zone in for loop: ", zone)
-            zone_distance = geopy.distance.distance((obu_lat, obu_lon), (zone[0], zone[1])).m
-            if zone_distance < closest_zone_distance:
-                closest_zone_distance = zone_distance
-                closest_zone = zone
-        if closest_zone:
-            #with lock:
-                OBU_ZONES.append(closest_zone)
-    #print("OBU with ID ({}) is OBU_ZONES AFTER!: {}".format(id, OBU_ZONES))
-            
-    return closest_zone
-
      
 def obu_process(broker, id, startDrone_lat, startDrone_lon, lock):
     print("Start Drone LAT ({}) for ID ({}) ".format(startDrone_lat, id))
