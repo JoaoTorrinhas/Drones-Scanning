@@ -20,5 +20,6 @@ Follow the steps below to set up and run the project:
 
 ## Project Map Example when run the project
 
+The red markers correspond to the zones that will be analyzed by the drones.
 
 ![Web App, Map example](Screenshots/Map_example.png)
