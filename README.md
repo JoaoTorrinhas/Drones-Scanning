@@ -9,7 +9,7 @@ To analyze an image, a python program was created which is based on looking for 
 
 Follow the steps below to set up and run the project:
 
-1. Push the image from [https://code.nap.av.it.pt/mobility-networks/vanetza](https://code.nap.av.it.pt/mobility-networks/vanetza).
+1. Push the docker image from [https://code.nap.av.it.pt/mobility-networks/vanetza](https://code.nap.av.it.pt/mobility-networks/vanetza).
 
 2. Open three terminals.
 
