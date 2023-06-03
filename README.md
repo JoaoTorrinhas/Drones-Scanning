@@ -3,7 +3,7 @@ This project was developed within the scope of the curricular unit Networks and 
 
 ## Resume
 The objective of this project is to use drones to analyze agricultural fields, using the V2C communication type in the context of VANET networks (Vehicular Ad Hoc Networks).
-To analyze an image, a python program was created which is based on looking for green, yellow and brown pixels (the most abundant colors in an agricultural field) and calculating their percentage. According to this percentage it is determined whether or not the field needs to be watered
+To analyze an image, a python program was created which is based on looking for green, yellow and brown pixels (the most abundant colors in an agricultural field) and calculating their percentage. According to this percentage it is determined whether or not the field needs to be watered.
 
 ## Getting Started
 
