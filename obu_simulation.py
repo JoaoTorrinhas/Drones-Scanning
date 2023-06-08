@@ -12,7 +12,8 @@ from script_obu2 import on_message as obu2_on_message, listen_denms as obu2_list
 from script_obu3 import on_message as obu3_on_message, listen_denms as obu3_listen_denms, find_closest_zone as obu3_find_closest_zone
 
 
-obus_cameras = ["static/seca.png", "static/verde2.png", "static/seca3.png", "static/verde1.jpg", "static/seca2.jpg"]  #Scans das cameras das obus -> obus_cameras[0] = scan da camera da zona1, ...
+obus_cameras = ["static/seca.png", "static/verde2.png", "static/seca3.png", "static/verde1.jpg", "static/seca2.jpg"]  #Scans das cameras das obus -> obus_cameras[0] = scan da camera da zona 0, ...
+
 analyze_zones = [[40.63239230194507,-8.6603676549793], [40.63195486065902,-8.661093930263293], [40.63142859277966,-8.660753978842079], [40.63192425397194, -8.659820484340262], [40.63284006630615,-8.660225733927449]]
 
 manager = mp.Manager()
