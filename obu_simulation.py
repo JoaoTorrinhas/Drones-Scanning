@@ -187,8 +187,8 @@ def obu_process(broker, id, startDrone_lat, startDrone_lon, lock):
 def obu_init_simulation(broker_obus, start_lat, start_lon):
     # Create list of starting coordinates for each drone
     coords_list = [(start_lat, start_lon),
-                   (start_lat + 0.00022, start_lon + 0.00022),
-                   (start_lat - 0.0002, start_lon - 0.0002)]
+                   (start_lat + 0.00022, start_lon + 0.00022), # u can change the coordinates of the drone in here
+                   (start_lat - 0.0002, start_lon - 0.0002)] # # u can change the coordinates of the drone in here
     
     process_list = []
     i = 0
@@ -207,6 +207,6 @@ def obu_init_simulation(broker_obus, start_lat, start_lon):
         
 
 if(__name__ == '__main__'):
-    starter_coordinates = [40.63142812994117,-8.662089161361086]
+    starter_coordinates = [40.63142812994117,-8.662089161361086] # u can change the coordinates of the drone in here
     obu_init_simulation([("192.168.98.20",1),("192.168.98.30",2),("192.168.98.40",3)], starter_coordinates[0], starter_coordinates[1])
  
